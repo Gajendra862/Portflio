@@ -1,0 +1,129 @@
+/* ----------------------------- media 750 ------------------------------- */
+@media only screen and (max-width: 850px) {
+    .navigtion .col-1 ul{
+        position: absolute;
+        top: -160px;
+        right: -4px;
+        width: 150px;
+        flex-direction: column;
+        transition: 1s top ease-in;
+        background: #2b3056;
+    }
+    .navigtion .col-1 ul.show{
+        top: 12%;
+    }
+    .navigtion .col-1 ul li a{
+        display: block;
+    }
+    .navigtion .burger{
+        display: block;
+    }
+    .big-font {
+        font-size: 3em;
+    }
+    .small-font {
+        font-size: 1.2em;
+        text-align: center;
+    }
+    .singin {
+        background-color: #2b3056;
+        padding: 10px 13px;
+        position: absolute;
+        width: 150px;
+        justify-content: center;
+        align-items: center;
+        top: 26px;
+        right: 48px;
+        transition:  1s top ease-in;
+        animation-name: down;
+        animation-timing-function: ease-in;
+    }
+    .singin span{
+        margin-left: 10px;
+    }
+    .singin.down{
+        top: 238px;
+    }
+    @keyframes down {
+        0%{
+            top: 37px;
+        } 
+        100%{
+            top: 238px;
+        }       
+    }
+    .second-text p:nth-child(2){
+        font-size: 14px;
+        padding: 0 15px;
+        text-align: center;
+    }
+    .col-5 .icon {
+        max-width: 200px;
+        min-height: 190px;
+    }
+    .col-5 p{
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .third-text .third-summry{
+        font-size: 14px ;
+        line-height: 20px;
+        width: 100%;
+        padding: 0 15px;
+        text-align: center;
+    }
+    .col-6 .card p{
+        font-size: 14px;
+        /* line-height: 20px; */
+    }
+    .col-7 p{
+        font-size: 14px;
+    }
+}
+
+
+
+/* ----------------------------- media 380 ------------------------------- */
+@media only screen and (max-width:350px){
+    .big-font {
+        font-size: 2.5em;
+    }
+    .small-font {
+        font-size: 1em;
+    }
+    .col-4 {
+        flex-direction: column  ;
+    }
+    .col-4 .wrap {
+        display: flex;
+        width: 40%;
+        flex-wrap: wrap;
+        margin: 10px auto;
+    }
+    .item8 {
+        position: absolute;
+        right: 25%;
+        bottom: -20px;
+    }
+    .col-4 .itme1{
+        border-bottom: 1px solid #5f5f5f;
+    }
+}
+
+
+/* ----------------------------- media 300 ------------------------------- */
+@media only screen and (max-width: 300px){
+    .col-2{
+        flex-basis: 100%;
+    }
+    .navigtion{
+        display: flex;
+
+    }
+    .row{
+        display: column;
+    }
+
+}
+
+
