@@ -1,0 +1,216 @@
+/* -------------------- media 800px --------------------- */
+
+
+@media only screen and (max-width:800px){
+    .content-1 h1{
+        font-size: 45px;
+    }
+    .content-2 .col-3{
+        flex-basis: 300px;
+    }
+    p{
+        font-size: 14px;
+    }
+    .content-5{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .col-8 img{
+        margin: 15px auto        
+    }
+    .col-9 h1 {
+        font-size: 45px;
+    }
+    .col-10 .que h3{
+        font-size: 17px;
+    }
+    .content-7 .content {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    .col-11:nth-child(2) h1{
+        margin: 15px 0;
+        text-align: center;
+    }
+}
+
+
+/* -------------------- media 750px --------------------- */
+
+
+@media only screen and (max-width:750px){
+    header nav .burger{
+        display: block;
+    }
+    header nav ul{
+        top: 85px;
+        right: -500px;     
+        display: none;
+        position: absolute;
+        width: 250px;
+        background-color: #0f0f0f;
+        padding:  0 0 0 0;
+        z-index: 5;
+        height: 86vh;
+        transition: right 2s ease;
+    }
+    header nav ul.show{
+        display: block;
+        right: 0px;
+    }
+    header nav ul li a{
+        text-align: right;
+        display: block;
+    }
+    .content-1 h1{
+        font-size: 40px;
+        line-height: 40px;
+    }
+    .content-1 p{
+        font-size: 15px;
+    }
+    p{
+        font-size: 13px;
+    }
+    .content-2 .col-1 p {
+        line-height: 25px;
+    }
+    .content-3 .row .bg {
+        background: #ff5f1f;
+        padding-top: 100px;
+        padding-bottom: 35  px;
+    }
+    .col-6 h1 {
+        font-size: 40px;
+    }
+    .col-6 h3 {
+        font-size: 25px;
+    }
+    .content-5 {
+        padding: 0 15px;
+    }
+    .col-7 .block {
+        font-size: 13px;
+    }
+    .col-7 h1 {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+}
+/* -------------------- media 600px --------------------- */
+
+
+@media only screen and (max-width:600px){
+    header nav ul{
+        display: none;
+    }
+    .content-1{
+        margin-top: 100px;
+    }
+    .content-1 h1{
+        font-size: 35px;
+        line-height: 35px;
+    }
+    .content-1 p{
+        font-size: 14px;
+    }
+    .content-1 .right-arrow img{
+        width: 50px;
+        margin: auto;
+    }
+    .col-6 h1 {
+        font-size: 35px;
+    }
+    .col-6 h3 {
+        font-size: 22px;
+    }
+}
+/* -------------------- media 500px --------------------- */
+
+
+@media only screen and (max-width:500px){
+    header nav .logo .limg img{
+        width: 50px;
+    }
+    header nav .logo .text {
+        font-size: 1.8em;
+    }
+    header nav ul{
+        display: none;
+    }
+    .content-1{
+        margin-top: 80px;
+    }
+    .content-1 h1{
+        font-size: 30px;
+        line-height: 35px;
+    }
+    .content-1 p{
+        font-size: 13px;
+    }
+    .content-1 .right-arrow img{
+        width: 40px;
+        margin: auto;
+    }
+    .col-6 h1 {
+        font-size: 35px;
+    }
+    .col-6 h1 {
+        font-size: 30px;
+    }
+    .col-6 h3 {
+        font-size: 21px;
+        margin: 20px 0;
+    }
+    .faq.present .ans p{
+        font-size: 12px;
+    }
+}
+/* -------------------- media 350px --------------------- */
+
+
+@media only screen and (max-width:350px){
+    header nav .logo .text{
+        font-size: 1.7em;
+    }
+    header nav ul{
+        display: none;
+    }
+    .content-1{
+        margin-top: 70px;
+    }
+    .content-1 h1{
+        font-size: 25px;
+        line-height: 35px;
+    }
+    .content-1 p{
+        font-size: 12px;
+    }
+    .content-1 .right-arrow img{
+        width: 40px;
+        margin: auto;
+    }
+    .col-3 button {
+        font-size: 12px;
+    }
+    .col-6 h1 { 
+        text-align: center;
+    }
+    .col-6 h3 {
+        text-align: center;
+    }
+    .col-9 p{
+        font-size: 12px;
+    }
+    .col-10 .que h3{
+        font-size: 15px;
+    }
+    .col-9 h1{
+        font-size: 40px;
+    }
+    .col-12 a {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,255 @@
+/* ------------------------------ media 1100px ------------------------------- */
+@media only screen and (max-width:1100px){
+    .col-2 .cards {
+        flex-direction: column;
+    }
+    .col-2 .cards .card {
+        flex-grow: 1;
+        width: 100%;
+        border-bottom: 2px solid #858585;
+    }
+    .col-2 .cards .card:last-child{
+        border-left: none;
+    }
+    .col-2 .cards .card h1{
+        margin: 0 auto 10px  0;
+    }
+    .col-2 .cards .card .star{
+        margin: 0 auto 10px 0;
+    }
+    .col-2 .cards .card .star img{
+        margin: auto 10px auto 0;
+    }
+    .col-2 .cards .card b{
+        margin: 0 auto 5px 0;
+    }
+    .col-2 .cards .card p{
+        margin: 0 auto 5px 0;
+        text-align: left;
+    }
+    .cards5 {
+        justify-content: flex-start;
+    }
+}
+/* ------------------------------ media 961px ------------------------------- */
+@media only screen and (max-width: 961px) {
+    .col-1{
+        flex-wrap: nowrap;
+    }
+    .nav .logo{
+        margin: 10px auto 10px 0;
+    }
+    .nav ul.navlist{
+        display: block;
+        position: absolute;
+        top: -250px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        transition: 0.5s ease;
+        z-index: 5;
+    }
+    .nav ul.navlist.show_navlist{
+        top: 60px;
+    }
+    .nav ul.navlist li{
+        margin: 0 0 0 0 ;
+    }
+    .nav .burger{
+        display: block;
+    }
+    .col-1 .items {
+        justify-content: flex-start;
+    }
+    .col-1 .items .item {
+        justify-content: flex-start;
+    }
+    .col-3 h1 {
+        font-size: 35px;
+    }
+    .col-5 h1 {
+        font-size: 30px;
+    }
+    .headtext3 .big_text h1 {
+        font-size: 30px;
+    }
+    .content4 .text h1 {
+        font-size: 35px;
+    }
+    .headtext5 h1 {
+        font-size: 30px;
+    }
+    .col-9 .solve h1 {
+        font-size: 35px;
+    }
+}
+/* ------------------------------ media 840px ------------------------------- */
+@media only screen and (max-width:840px){
+    .col-2 .text h1 {
+        font-size: 25px;
+    }
+    .col-10 .text7 {
+        max-width: 100%;
+        flex-grow: 1;
+    }
+    .col-6 .card img {
+        width: 35px;
+        height: 35px;
+    }    
+    .col-6 .card h1 {
+        font-size: 22px;
+        margin: 0 0 10px 0;
+    }
+    .col-6 .card p {
+        font-size: 12px;
+        line-height: 20px;
+    }
+}
+/* ------------------------------ media 741px ------------------------------- */
+@media only screen and (max-width: 741px) {
+    .col-1  {
+        align-items: stretch ;
+    }
+    .col-2 .cards .card h1 {
+        font-size: 35px;
+    }
+    .col-3 h1 {
+        font-size: 30px;
+        line-height: 28px;
+    }
+    .col-3 p {
+        font-size: 12px;
+    }
+    .col-5 h1 {
+        font-size: 25px;
+    }
+    .content4 .text h1 {
+        font-size: 30px;
+    }
+    .cards5 {
+        justify-content: center;
+        flex-direction: column;
+    }
+    .col-9 .solve h1 {
+        font-size: 30px;
+    }
+    .col-12 .item1 .logo {
+        max-width: 175px;
+    }
+    .col-12 .help img {
+        width: 30px;
+    }
+}   
+/* ------------------------------ media 660px ------------------------------- */
+@media only screen and (max-width: 660px) { 
+    .col-5 .text {
+        margin: 15px 0;
+    } 
+    .col-5 p.small {
+        font-size: 12px;
+        color: #858585;
+        line-height: 22px;
+        border-left: 2px solid #858585;
+        border-right: none;
+    }
+}
+/* ------------------------------ media 500px ------------------------------- */
+@media only screen and (max-width:501px){
+    .head-content h1 {
+        font-size: 30px;
+    }
+    .head-content span {
+        font-size: 14px;
+    }
+    .head-content a.active {
+        font-size: 14px;
+    }
+    .col-1 .help .img img {
+        width: 35px;
+        margin: auto 10px 5px 0;
+    }
+    .col-1 .help .text h1 {
+        font-size: 20px;
+    }
+    .col-1 .help .time {
+        font-size: 14px;
+    }
+    form h1 {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (min-width: 320px) {
+    .col-1 {
+        transform: translate(-50%, 30%);
+    }
+    .col-1 .items .item img {
+        width: 25px;
+    }
+    .head-content span {
+        font-size: 12px;
+    }
+    .col-2 .text p.color {
+        color: #00ACFF;
+        font-size: 14px;
+        
+    }
+    .col-2 .text p{
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .content4 .text p {
+        font-size: 12px;
+    }
+    .content4 .text .img_text .imgtext p {
+        font-size: 12px;
+    }
+    .imgtext5 .text5 p {
+        font-size: 12px;
+    }
+    .col-9 .solve{
+        position: relative;
+        flex-basis: 200px;
+        display: flex;
+        transform: translateY(10%);
+        padding: 35px 35px;
+        background-color: #fff;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .col-9 .solve h1 {
+        font-size: 25px;
+        line-height: 28px;
+    }
+    .col-9 .playbtn6 p {
+        text-align: center;
+    }
+    .col-9 .solve p.small {
+        font-size: 12px;
+    }
+    .text7 h1 {
+        font-size: 25px;
+    }
+    .text7 h1 {
+        font-size: 25px;
+    }
+    form p.small {
+        font-size: 12px;
+    }
+    .col-11 {
+        justify-content: center;
+    }
+    .col-11 p.big {
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .col-12 .item1 .logo {
+        max-width: 150px;
+    }
+    .col-12 .help img {
+        width: 25px;
+    }
+    .col-12 .help .text p.color {
+        font-size: 18px;
+    }
+}
