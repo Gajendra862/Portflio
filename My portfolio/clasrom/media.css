@@ -1,0 +1,198 @@
+/* ----------------------------  960px   ---------------------------- */
+
+@media only screen and (max-width:961px){
+    nav .navlist{
+        display: none;
+        flex-direction: column;
+        left: -5000px;
+        transition: 0.5s ease;
+    }
+    nav .navlist.show{
+        display: block;
+        position: absolute;
+        top: 70px;
+        height: 95vh;
+        right: 0;
+        background: #fff;
+        z-index: 2;
+    }
+    nav .navlist.show ul{
+        display: block;
+    }
+    nav .navlist.show ul li{
+        display: flex;
+    }
+    nav .burger{
+        display: block;
+        cursor: pointer;
+    }
+    nav .burger.close .hamburger1{
+        transform: rotate(45deg);
+        bottom: 13px;
+    }
+    nav .burger.close .hamburger3{
+        transform: rotate(-45deg);
+        bottom: 13px;
+    }
+    nav .burger.close .hamburger2{
+        display: none;
+    }
+    .content-2 .content .headline2 .light {
+        font-size: 12px;
+        line-height: 18px;
+        /* margin: auto 0 auto auto; */
+    }
+    .content-2 .content .row2 .text.light {
+        font-size: 12px;
+        line-height: 18px;
+        /* margin: auto 0 auto auto; */
+    }
+    .content-3 .row1 .light {
+        font-size: 12px;
+        line-height: 18px;
+        /* margin: auto 0 auto auto; */
+    }    
+    .content-3 .row3 .light {
+        font-size: 12px ;
+        line-height: 18px;
+        margin: auto 0 auto auto;
+    }
+    .content-4 .row1 .light {
+        line-height: 18px;
+        font-size: 12px ;
+        /* margin: auto 0 auto auto; */
+    }
+    .footer .row1 ul li a{
+        font-size: 12px;
+    }
+    .footer .text .padding{
+        font-size: 12px;
+    }
+
+}
+
+/* ----------------------------  890px   ---------------------------- */
+
+@media only screen and (max-width:891px){
+    .content-1 .img {
+        height: 68vh;
+    }
+    .content-1 .text h1 {
+        line-height: 40px;
+        font-size: 2.5em;
+    }
+    .content-2 .content, .headline2 {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .content-2 .headline2 .bold{
+        margin-right: auto;
+    }
+    .content-2 .headline2 .light{
+        margin: 10px auto 10px 0;
+    }
+    .content-2 .content .row2 {
+        flex-direction: column;
+    }
+    .content-2 .content .row2 .bold{
+        margin-right: auto;
+    }
+    .content-2 .content .row2 .light{
+        margin: 10px auto 10px 0;
+    }
+    .content-2 .content .row3 .img {
+        max-width: 400px;
+        height: 65vh;
+    }
+    .content-3 .row1 {
+        flex-direction: column;
+    }
+    .content-3 .row1 .bold{
+        margin-right: auto;
+    }
+    .content-3 .row1 .light{
+        margin: 10px auto 10px 0;
+    }
+    .content-3 .row3 {
+        flex-direction: column;
+    }
+    .content-3 .row3 .bold{
+        margin-right: auto;
+    }
+    .content-3 .row3 .light{
+        margin: 10px auto 10px 0;
+    }
+    .content-4 .row1 {
+        flex-direction: column;
+    }
+    .content-4 .row1 .bold{
+        margin-right: auto;
+    }
+    .content-4 .row1 .light{
+        margin: 10px auto 10px 0;
+    }
+}
+
+/* ----------------------------  770px   ---------------------------- */
+
+@media only screen and (max-width:771px){
+    .content-3 .row2 {
+        justify-content: center;
+    }
+    .content-3 .row4 {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .content-3 .row2 .teacher-card {
+        max-width: 400px;
+    }
+    .content-4 .row2 .card {
+        max-width: 350px;
+    }
+    .content-4 .row2{
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+}
+
+/* ----------------------------  660px   ---------------------------- */
+
+@media only screen and (max-width:661px){
+    .content-1{
+        flex-direction: column;
+    }
+    nav .navlist.show {
+        height: 115vh;
+    }
+    .content-1 .img {
+        margin: 0 auto;
+    }
+    .content-2 .content .row3 .detial .detialcard {
+        margin: 15px auto;
+        max-width: 350px;
+    }
+}
+
+    /* ----------------------------  430px   ---------------------------- */
+
+    @media only screen and (max-width:431px){
+        nav .logo .img {
+            width: 30px;
+        }
+        nav .logo .logoname{
+            font-size: 25px;
+        }
+        .content-2 .content .row1 .text .card {
+            margin: 5px auto;
+        }
+        .content-1 .text h1 {
+            line-height: 35px;
+            font-size: 2em;
+        }
+        .content-2 .content .row3 .detial .detialcard {
+            margin: 15px auto;
+            max-width: 200px;
+            padding: 10px;
+        }
+    }
