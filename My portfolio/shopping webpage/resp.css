@@ -1,0 +1,48 @@
+/* --------------------------- media query for less than 1281px screen size  --------------------------- */
+@media only screen and (max-width:1281){
+    .container{
+        max-width: 1280px;
+        
+    }
+}
+
+/* --------------------------- media query for less than 1026px screen size  --------------------------- */
+/* --------------------------- media query for less than 801px screen size  --------------------------- */
+@media only screen and (max-width:801px) {
+
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #333;
+        width: 100%;
+        overflow: hidden;
+        transition:  max-height 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a{
+        color: #fff;         
+    }
+    .menu-icon{
+        width: 28px;
+        margin-left: 20px;
+        display: block;
+    }
+}
+/* --------------------------- media query for less than 600px screen size  --------------------------- */
+@media only screen and (max-width:481px){
+    .row{
+        text-align: center;
+    }
+    .col-2 , .col-3 , .col-4{
+        flex-basis: 100%;
+    }
+    .testimonial {
+        padding: 100px 0;
+    }
+}

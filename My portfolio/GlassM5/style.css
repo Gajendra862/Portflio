@@ -1,0 +1,767 @@
+*{
+    padding: 0 ;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: verdana, arial;
+    color: #283c5c;
+}
+html,body{
+    width: 100%;   
+    overflow-x: hidden ;
+}
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    flex-wrap: wrap;
+}
+.content{
+    max-width: 1000px;
+    margin: auto;
+    height: auto;
+    padding: 0 15px;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+.blur{
+    /* background: rgba(255, 255, 255, 0.1); */
+    background: rgba(255, 255, 255, 0.4) ;
+    backdrop-filter: blur(5px);
+    overflow: hidden;
+}
+.active{
+    background: linear-gradient(to right, #283c5c , #b0c1dd);
+    color: #ffff;
+    border-radius: 45px;
+    padding: 13px 25px;
+    font-weight: bold;
+}
+
+
+
+/*------------------------------------  header  -------------------------------------*/
+
+.header{
+    position: relative;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+    background: url("img/build3.jpg");
+    background-size: 100% 100%;
+}
+.nav{
+    padding: 15px 20px;
+    width: 100%;
+    position: absolute;
+    justify-content: space-between;
+}
+.nav .logo{
+    max-width: 100px;
+}
+.nav .logo img{
+    width: 100%;
+}
+.nav ul li{
+    display: inline-flex;
+}
+.nav ul li a{
+    font-weight: bold;
+    padding: 12px 15px;
+}
+.nav ul li a.active{
+    padding: 13px 25px;
+}
+.burger{
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    width: 35px;
+    height: 35px;
+    display: none;
+}
+.burger .hamburger{
+    width: 100%;
+    height: 5px;
+    background: #283c5c;
+    position: relative;
+    border-radius: 6px;
+    transition: transform 0.6s ease-in-out
+}
+.burger .hamburger:nth-child(1){
+    transform: translateY(1px);
+}
+.burger .hamburger:nth-child(2){
+    transform: translateY(5px);
+    opacity: 1;
+    transition: opacity 0.6s ease-in-out;
+}
+.burger .hamburger:nth-child(3){
+    transform: translateY(10px);
+}
+.content-1, .content-2, .content-3, .content-4, .content-5, .content-6, .content-7{
+    position: relative;
+}
+
+
+    /*------------------------------------  content-1  -------------------------------------*/
+    
+    .content-1{
+    width: 100%;
+    position: relative;
+    height: auto;
+    flex-shrink: 0;
+    padding: 150px 0 75px 0;
+    top: 25%;
+}
+.col-1{
+    width: 100%;
+    border-radius: 15px ;
+    overflow: hidden;
+    padding: 35px 25px;
+    position: relative;
+    z-index: 1;
+}
+.col-1 h1{
+    font-size: 2.5em;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.col-1 p{
+    line-height: 25px;
+    margin: 20px 0;
+}
+.col-1 .active{
+    margin-top: 25px;
+    margin-bottom: 50px;
+    display: inline-block;
+}
+.content-1 span{
+    position: absolute;
+    border-radius: 50%;
+}
+.content-1 span.cir1{
+    width: 200px;
+    height: 200px;
+    top: 110px;
+    right: -80px;
+    z-index: 2;
+    backdrop-filter: blur(1px);
+}
+.content-1 span.cir2{
+    z-index: 2;
+    width: 100px;
+    height: 100px;
+    bottom: 45px;
+    left: -25px;
+    backdrop-filter: blur(1px);
+}
+
+
+/*------------------------------------  content-2  -------------------------------------*/
+
+.content-2{
+    height: auto;
+    padding: 50px 0;
+    background: #b0c1dd;
+}
+.col-2{
+    width: 100%;
+    flex-grow: 1;
+    height: auto;
+    border-radius: 20px;
+    margin: 50px 0;
+    padding: 30px ;
+    display: flex;
+}
+.col-2 .one{
+    width: 300px;
+    flex-grow: 1;
+    flex-basis: 300px;
+    padding: 15px 0;
+}
+.col-2 .one .icon{
+    margin-bottom: 30px;
+    padding-right: 30px;
+    line-height: 25px;
+}
+.col-2 .one .icon .bold{
+    font-weight: bold;
+}
+.col-2 .one .icon img{
+    width: 50px;
+}
+
+
+/*------------------------------------  content-3  -------------------------------------*/
+
+.content-3{
+    width: 100%;
+    height: auto;
+    background: url("img/build1.jpg") no-repeat;
+    background-size: cover;
+    padding: 90px 0;
+}
+.content-3 .content{
+    border-radius: 15px;
+}
+.content-3 .content .col-3{
+    border-radius: 15px;
+}
+.content-3 .content{
+    width: 100%;
+}
+.content-3 .content .img{
+    width: 100%;    
+}
+.content-3 .content .img img{
+    width: 100%;
+    margin: 30px 15px; 
+    border-radius: 15px;   
+}
+.content-3 .content .col-3{
+    width: 100%;    
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: 25px 0;
+    flex-shrink: 1;
+}
+.content-3 .content .col-3 .active{
+    flex-shrink: 0;
+}
+.content-3 .content .col-4{
+    width: 100%;    
+    flex-grow: 1;
+}
+.content-3 .content .col-4 .row1{
+    flex-grow: 1;
+    flex-basis: 300px;
+    margin: 15px 0 50px 0;
+}
+.content-3 .content .col-4 .row1 .text{
+    margin: 15px 0 ;
+    padding: 0 15px 0 0 ;
+    line-height: 25px;
+}
+
+
+/*------------------------------------  content-4  -------------------------------------*/
+
+.content-4{
+    background: #b0c1dd;
+    padding: 65px;
+    text-align: center;
+}
+.content-4 h3{
+    margin:15px 0;
+}
+.content-4 .col-5{
+    width: 100%;
+    margin-top: 35px;
+    flex-basis: 300px;
+    border-radius: 15px;
+    padding: 45px 15px  ;
+}
+.content-4 .col-5 .row1{
+    flex-grow: 1;
+    flex-basis: 300px;
+    padding: 15px 0;
+}
+.content-4 .col-5 .row1 .text{
+    flex-direction: column;
+    line-height: 25px;
+    margin-bottom: 35px;
+}
+.content-4 .col-5 .row1 .text h1{
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+
+
+/*------------------------------------  content-5  -------------------------------------*/
+
+.content-5{
+    width: 100%;
+    height: 100vh;
+    background: url("img/office.jpeg") no-repeat;
+    background-size: cover;
+    padding: 60px;
+    text-align: center  ;
+}
+.content-5 h3{
+    margin-top: 15px;
+    font-size: 25px;
+}
+.col-6{
+    width: 100%;
+    justify-content: space-evenly;
+    margin: 60px 0;
+}
+.col-6 .icon{
+    max-width: 30%;
+    flex-shrink:1;
+    padding: 15px;
+    margin: 15px 10px;
+    border-radius: 15px;
+}
+.col-6 .icon img{
+    width: 100%;
+    color: #000;
+}
+
+
+    /*------------------------------------  content-6  -------------------------------------*/
+    
+    .content-6{
+        width: 100;
+        padding: 60px 0;
+    background: #b0c1dd;
+}
+.col-7{
+    /* margin: 25px 0; */
+    width: 100%;
+    justify-content: space-evenly;
+}
+.col-7 .img{
+    flex-basis: 350px;
+    border-radius: 15px ;
+    overflow: hidden;
+    height: 65vh;
+    margin:  25px;
+    position: relative;
+}
+.col-7 .img img{
+    width: 100%;
+    height: 100%;
+}
+.col-7 .img1::after{
+    content: "Manager";
+    position: absolute;
+    color: #fff;
+    bottom: 60px;
+    left: 40%;
+    z-index: 1;
+}
+.col-7 .img1::before{
+    content: "Ann Smith";
+    position: absolute;
+    font-weight: bold;
+    color: #fff;
+    bottom: 30px;
+    left: 35%;
+    z-index: 1;
+}
+.col-7 .img2::after{
+    content: "Designer";
+    position: absolute;
+    color: #fff;
+    bottom: 60px;
+    left: 40%;
+    z-index: 1;
+}
+.col-7 .img2::before{
+    content: "James Brown";
+    position: absolute;
+    font-weight: bold;
+    color: #fff;
+    bottom: 30px;
+    left: 35%;
+    z-index: 1;
+}
+.col-7 .img3::after{
+    content: "Developer";
+    position: absolute;
+    color: #fff;
+    bottom: 60px;
+    left: 40%;
+    z-index: 1;
+}
+.col-7 .img3::before{
+    content: "Ben Jason";
+    position: absolute;
+    font-weight: bold;
+    color: #fff;
+    bottom: 30px;
+    left: 35%;
+    z-index: 1;
+}
+
+
+/*------------------------------------  content-7 -------------------------------------*/
+.content-7{
+    width: 100%;
+    height: 100vh;
+    padding: 45px 0;
+    background: #b0c1dd ;
+}
+.col-8{
+    width: 100%;
+    height: 100%;
+    background: url("img/office-workers.jpg") no-repeat;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: darken;
+    position: relative;
+    background-size: 100% 100%;
+}
+.col-8 #play{
+    cursor: pointer;
+    position: relative;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background: #fff;
+    padding-left: 5px;
+    box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.4);
+}
+.col-8 #play::after{
+    width: 130px;
+    content: "Watch Now";
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+    display: flex;
+    transform: translateY(30px);
+    display: none;
+    left: -50%;
+}
+.col-8 #play:hover::after{
+    transition: transform 0.8s ease-in;
+    transform: translateY(50px);
+    display: block;
+}
+
+.col-8 #play img{
+    width: 50%;
+}
+.show{
+    display: none;
+    width: 100%;
+    height: 0%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.7);
+    top: 0;
+    left: 0;
+}
+.showa{
+    transition-property: height;
+    transition: ease-in 0.5s ;
+    display: block;
+    height: 100%;
+}
+.show #close{
+    position: absolute;
+    cursor: pointer;
+    top: -3px;
+    right: 25px;
+    color: #fff;
+    font-size: 35px;
+}
+.show video{
+    width: 100%;
+    height: 100%;
+    padding: 45px 0;
+}
+
+    /*------------------------------------  content-8 -------------------------------------*/
+    .content-8{
+        padding: 35px 0 80px 0;
+    background: #b0c1dd;
+    position: relative;
+}
+.col-9{
+    padding: 50px 30px;
+    border-radius: 25px;
+    font-weight: bold;
+}
+.col-9 h1{
+    font-size: 35px;
+    margin-bottom: 35px;
+}
+.col-9 p{
+    line-height: 40px;
+}
+.col-9 .text{
+    border-bottom: 1px solid #a5a5a5;
+    margin-top: 15px;
+    overflow: hidden;
+    position: relative;
+}
+.col-9 .text .que,.ans{
+    position: relative;
+}
+.col-9 .text p,span{
+    font-size: 14px;
+    cursor: pointer;
+}
+.col-9 .text .que span{
+    position: absolute;
+    margin-bottom: 5px;
+    right: 0;
+}
+.col-9 .text.activeans{
+    max-height: 100px;
+}
+.col-9 .text .ans{
+    max-height: 0;
+    margin-top: 25px;
+}
+.col-9 .text.activeans .ans{
+    max-height: 100px;
+}
+
+
+/*------------------------------------  content-9 -------------------------------------*/
+
+
+.content-9{
+    position: relative;
+    margin: auto 0; 
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background: rgba(0, 0, 0, 0.4)url("img/office-workers.jpg");  
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.black {
+    width: 100%;
+    max-height: 112vh;
+}
+.black .content{
+    width: 100%;
+    border-radius: 45px;
+    padding: 35px 15px;
+}
+.black .content .col-10{
+    flex-basis: 300px;
+    margin: 25px 0;
+}
+.black .content .col-10 h2{
+    margin: 15px 0; 
+}
+.col-11 .text .que h2{
+    font-size: 20px;
+}
+.col-12 h1 {
+    font-size: 30px;
+}
+.col-15 {
+    width: 100%;
+    justify-content: flex-start;
+}
+.footer .socil {
+    justify-content: flex-start;
+}
+
+
+/*------------------------------------  content-10 -------------------------------------*/
+
+
+.content-10{
+padding: 35px 0 80px 0;
+background: #b0c1dd;
+position: relative;
+}
+.col-11{
+    padding: 50px 30px;
+    border-radius: 25px;
+    font-weight: bold;
+}
+.col-11 h1{
+font-size: 35px;
+margin-bottom: 10px;
+}
+.col-11 p{
+    line-height: 40px;
+}
+.col-11 .text{
+    border-bottom: 1px solid #a5a5a5;
+    margin-top: 15px;
+    overflow: hidden;
+    position: relative;
+}
+.col-11 .text .que,.ans{
+position: relative;
+}
+.col-11 .text .ans.present{
+    max-width: 250px;
+    transition: all 0.6s ease;
+}
+.col-11 .text p,span{
+font-size: 14px;
+cursor: pointer;
+}
+.col-11 .text .que span{
+position: absolute;
+margin-bottom: 5px;
+bottom: 0;
+font-size: 25px;
+right: 0;
+}
+.col-11 .text.activeans{
+max-height: 100px;
+}
+.col-11 .text .ans{
+max-height: 0;
+margin-top: 25px;
+}
+.col-11 .text.activeans .ans{
+    max-height: 100px;
+}
+
+
+    /*------------------------------------  content-11 -------------------------------------*/
+    
+    .content-11{
+    width: 100%;
+    height: auto;
+    background: url("img/build2.jpg") no-repeat;
+    background-size: cover;
+    padding: 50px 15px;
+    line-height: 25px;
+}
+.cotent-11 .content{
+    width: 80%;
+}
+.col-12{
+    padding: 20px 0;
+}
+.col-12 h1{
+    font-size: 35px;
+    margin: 20px 0 60px 0;
+}
+.col-12 .tex{
+    margin: 20px 0;
+}
+.col-12 .mail{
+    margin-top: 60px;
+}
+.col-13{
+    flex-direction: column;
+    padding: 7% 3% 10% 3%;
+    border-radius: 25px;
+}
+.col-13 input{
+    font-size: 12px ;
+    color: gray;
+    padding: 12px 11px;
+    border-radius: 8px;
+    border: none;
+    margin-bottom: 15px;
+    width: 100%;
+}
+.col-13 textarea{
+    border-radius: 8px;
+    resize: none;
+    width: 100%;
+    height: 150px;
+    border: none;
+    color: gray;
+    padding: 12px 11px;
+    font-size: 12px;
+}
+.col-13  input.massage{
+    height: 200px;
+    
+}
+
+
+/*------------------------------------  content-12 -------------------------------------*/
+
+.content-12{
+    position: relative;
+    width: 100%;
+    height: auto;
+    background: linear-gradient(to top right, #b0c1dd , #283c5c);
+    padding: 7% 0;
+}
+.col-14{
+    width: 75%;
+    border-radius: 55px;
+    overflow: hidden;
+    height: 67vh;
+}
+.col-14 iframe{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+/*------------------------------------  content-12 -------------------------------------*/
+
+.footer{
+    width: 100%;
+    height: auto;
+    background: #000815;
+    padding: 20px 15px 25px 15px;
+}
+.footer p{
+    color: #fff;
+    line-height: 30px;
+}
+.footer h2{
+    margin-bottom: 5px;
+}
+.footer .content{
+    padding: 40px 0;
+}
+.col-15{
+    width: 100%;
+}
+.footer .content .text{ 
+    flex-direction: column;
+    flex-grow: 1;
+    flex-basis: 350px;
+    margin-right: auto;
+    text-align: left;
+}
+.footer .content .text p,h2{
+    margin-right: auto;
+}
+.footer .socil{
+    flex-grow: 1;
+    width: 100%;
+    padding: 10px 0;
+}
+.footer .socil span{
+    display:  flex;
+    margin: 10px 15px;
+   background: #283c5c;
+   width: 50px;
+   height: 50px;
+   align-items: center;
+   justify-content: center;
+   border-radius: 50%;
+}
+.footer .socil span img{
+    width: 50%;
+    height: 50%;
+}
+.footer .line{
+    width: 100%;
+    height: 0.5px;
+    background: #fff;
+    display: block;
+}
+.footer .col-16{
+    flex-grow: 1;
+    flex-basis: 350px;
+    align-items: flex-start;
+    margin: 25px 0;
+}
+.footer .col-16 .text.left-p{
+    padding-right: 25px;
+}
+.footer .col-16 .text h2{
+    margin-bottom: 20px;
+}
+
+

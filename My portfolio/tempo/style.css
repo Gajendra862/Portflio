@@ -1,0 +1,760 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html,body{
+    overflow-x: hidden;
+}
+body{
+    background-color: #d9d9d9;
+}
+.content{
+    height: auto;
+    margin: auto;
+    max-width: 1100px ;
+    padding: 60px 25px;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.commen-btn{
+    color: #f42c38;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px 17px;
+    border-radius: 45px;
+    background: #ffc2c6;
+    cursor: pointer;
+}
+.commen-color{
+    color: #f42c38;
+}
+
+/* ---------------------------- top header ---------------------------- */
+
+.top-header{
+    color: #fff;
+    height: 100vh;
+    position: relative;
+    width: 100%;
+    background: url("img/code.jpg"), rgba(0, 0, 0, 0.6);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+/* --------------------------- nav --------------------------------- */
+
+nav{
+    position: fixed;
+    width: 100%;
+    padding: 7px 0;
+    transition: 0.6s;
+}
+.sticky{
+    background: #000;
+}
+nav .logo{
+    flex-grow: 1;
+    padding: 10px 15px;
+    font-size: 5.5vh;
+    flex-basis: 150px;
+    cursor: pointer;
+}
+nav .logo:hover{
+    color: #f42c38;
+    transition: 0.6s;
+    text-shadow: 0 0 5px #f42c38,;
+    text-shadow: 0 0 8px #f42c38,;
+    text-shadow: 0 0 11px #f42c38,;
+    text-shadow: 0 0 15px #f42c38;
+}
+.col-1{
+    text-align: right ;
+    flex-basis: 600px;
+    flex-grow: 2;
+}
+.col-1 ul{
+    display: inline-flex;
+    list-style-type: none;
+    padding-right: 15px;
+}
+.col-1 ul li a{
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.5s;
+    padding: 7px 15px;
+}
+.col-1 ul li .active{
+    color: #f42c38;
+}
+.col-1 ul li a:hover{
+    color: #f42c38;
+}
+nav .burger{
+    width: 30px;
+    height: 30px;
+    display: none;
+    margin: auto 15px auto 0;
+    cursor: pointer;
+}
+nav .burger .hamburger{
+    width: 100%;
+    height: 4px;
+    border-radius: 5px; 
+    background-color: #f42c38;
+}
+nav .burger .hamburger1{
+    transform: translateY(22px);
+}
+nav .burger .hamburger2{
+    transform: translateY(10px);
+}
+nav .burger .hamburger3{
+    transform: translateY(-2px);
+}
+nav .burger.close .hamburger1{
+    transform: rotate(45deg) translate(9px,9px);
+}
+nav .burger.close .hamburger2{
+    display: none;
+}
+nav .burger.close .hamburger3{
+    transform: rotate(-45deg) translate(-6px, 6px);
+}
+/* --------------------- content-1 ------------------------- */
+
+
+.content-1{
+    top: 15%;
+    position: relative;
+    text-align: center;
+    margin: auto;
+}
+
+.col-2{
+    display: inline-block;
+    margin: auto;
+}
+.col-2 .btn .btn1{
+    padding: 7px 20px;
+    background: rgba(255, 255, 255, 0.150);
+    border-radius: 25px;
+}
+.col-2 .btn{
+    margin: 15px 0;
+}
+.col-2 .btn .btn2{
+    padding: 7px 15px;
+    border: 2px solid#fff;
+    border-radius: 45px;
+}
+
+
+/* --------------------- content-2 ------------------------- */
+
+
+.col-2{
+    margin: 25px auto;
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+}
+.col-2 h1{
+    padding: 15px 0;
+}
+.col-2 p{
+    line-height: 25px;
+}
+.col-3{
+    margin: 20px auto 35px auto;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+.col-3 p{
+    line-height: 25px;
+    padding: 1px 0;
+}
+.col-3 div{
+    margin: 15px 0;
+}
+.col-3 a{
+    font-weight: bold;
+    text-decoration: none;
+    color: #f42c38;
+    border: #f42c38 2.5px solid;
+    padding: 10px 25px;
+    border-radius: 45px;
+}
+
+
+/* --------------------- content-3 ------------------------- */
+
+.card{
+    justify-content: space-between;
+    margin: 20px 0;
+}
+.col-4{
+    background: #fff;
+    flex-basis: 450px;
+    margin: 10px 0;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 35px  75px;
+    text-align: center;
+    line-height: 25px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+}
+.col-4 p{
+    padding: 15px 0;
+}
+
+
+/* --------------------- content-4 ------------------------- */
+
+.content-4{
+    padding: 60px 0;
+    border-top: 2px solid rgba(0, 0, 0, 0.15);
+}
+.card2{
+    justify-content: space-between;
+}
+.col-5{
+    background: #fff;   
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin: 10px ;
+    padding: 20px 40px;
+    flex-basis: 300px;
+    border-radius: 5px;
+}
+.col-5 p{
+    padding: 0 25px;
+}
+
+
+/* --------------------- content-5 ------------------------- */
+
+
+.content-5{
+    width: 100%;
+    background: url("img/teamwrok.jpg") rgba(0, 0, 0, 0.8);
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+    color: #fff;
+}
+.col-6{
+    padding:60px 0 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-flow: column wrap;
+}
+.col-6 h1{
+    padding: 15px 0;
+}
+.col-6 p{
+    padding: 12px 0;
+    line-height: 25px;
+}
+.col-6 .btn{
+    padding: 7px 15px;
+    border: 2px solid#fff;
+    border-radius: 45px;
+    margin: 12px 0;
+}
+
+
+/* --------------------- content-6 ------------------------- */
+.content-6{
+    padding-bottom: 20px;
+}
+.col-7{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.col-7 h1{
+    padding: 20px 0;
+}
+.col-7 p{
+    line-height: 25px;
+}
+.col-btn{
+    display: flex;
+    margin: 20px 0;
+    flex-wrap: wrap;
+    color: #000;
+}
+.col-btn .fbtn{
+    color: #000;
+    padding: 7px 17px;
+    border: none;
+    background: rgba(0,0,0,0.15);
+    margin: 5px 5px;
+    border-radius: 45px;
+    transition: background-color 0.5s, color 0.5s ;
+    cursor: pointer;
+}
+.col-btn .active{
+    color: #fff;
+    background: #f42c38;
+}
+.col-btn .fbtn:hover{
+    color: #fff;
+    background: #f42c38;
+}
+
+/* --------------------- content-7 ------------------------- */
+
+
+.content-7{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 12px;
+    grid-row-gap: 12px;
+    padding-top: 0;
+}
+.col-8{
+    max-height: 325px ;
+}
+.col-8 img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* --------------------- content-8 ------------------------- */
+
+.content-8{
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.col-9{
+    display: felx;
+    flex-flow: column wrap;
+    text-align: center;
+    line-height: 25px;
+}
+.col-9 h1{
+    margin: 15px 0;
+}
+
+.col-10{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 300px));
+    grid-column-gap: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding: 0 15px;
+    width: 100%;
+    
+}
+.col-10 .card{
+    flex-basis: 300px;
+    cursor: pointer;
+    text-align: center;
+    background: rgb(196, 196, 196);
+    overflow: hidden;
+    border-radius: 10px;
+}
+.col-10 .card h4{
+    padding: 30px 0 10px 0;
+    transition: 0.5s all;
+}
+.col-10 .card .flex{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: flex-end;
+}
+.col-10 .card .flex span{
+    margin-bottom: auto;
+    color: #f42c38;
+}
+.col-10 .card .commen-btn{
+    display: flex;
+    width: 150px;
+    justify-content: center;
+    align-items: center;
+    margin: 5px auto;
+    position: relative;
+    top: -50px;
+    overflow: hidden;
+    
+}
+.col-10 .card .flex h1{
+    font-size: 35px;
+    font-weight: 500;
+    color: #f42c38;
+}
+.col-10 .card .flex .light{
+    color: gray;
+    text-decoration: none;
+    line-height: 30px;
+}
+.col-10 .light{
+    color: gray;
+    text-decoration: line-through ;
+}
+.col-10 .card p{
+    line-height: 40px;
+}
+.col-10 .card .btn{
+    margin: 20px auto;
+    padding: 12px 0;
+    color: #f42c38;
+    border: 3px solid #f42c38;
+    border-radius: 45px;
+    font-weight: 600;
+    width: 150px;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+
+.col-10 .card:hover{
+    border: 3px solid #f42c38;
+}
+.col-10 .card:hover .btn{
+    background: #f42c38;
+    color: #fff;
+}
+.col-10 .card:hover .commen-btn{
+    display: flex;
+    top: 0;
+    transition: 0.50s ease-in-out;
+}
+
+
+/* --------------------- content-9 ------------------------- */
+
+
+.col-11{
+    flex-flow: column wrap;
+}
+.col-11 h1{
+    margin: 10px 0 20px 0;
+}
+.col-12{
+    flex-flow: column wrap;
+    color: rgb(80, 80, 80);
+}
+.col-12 .faq{
+    border-bottom: 1px solid rgb(80, 80, 80);
+}
+.question{
+    display: flex;
+    padding: 12px 0;
+    font-size: 25px;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+}
+.question .arrow{
+    font-size: 35px;
+    margin: 0 15px;
+    transform: rotate(180deg, 90deg);
+    transform: rotate(90deg);
+}
+.question p{
+    align-items: center;
+}
+.answer{
+    overflow: hidden;
+    max-height: 0;
+    transition: max-hight 1.5s ease;
+}
+.faq.activeans .answer{
+     max-height: 180px;
+     transition: 0.8s ease-out;
+    padding-left: 15px  ;
+}
+.faq.activeans .question .arrow{
+    transform: rotate(270deg);
+    transition: 0.4s ease-in-out;
+}
+.answer p{
+    margin-left: 25px;
+}
+
+
+/* --------------------- content-10 ------------------------- */
+
+.content-10{
+    margin-top: 50px;
+}
+.col-13{
+    flex-flow: column wrap;
+    text-align: center;
+}
+.col-13 .commen-btn{
+    margin: 15px 0;
+}
+.col-13 h1{
+    margin: 5px 0 15px 0;
+}
+.col-13 p{
+    line-height: 25px;
+}
+.col-14{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    line-height: 28px;
+}
+.col-14 .person{
+    flex-basis: 350px;
+    margin: 25px 15px;
+    background-color: #fff;
+}
+.col-14 .person img{
+    width: 100%;
+    height: 60vh;
+}
+.col-14 .person .detail{
+    padding: 10px 0 20px 0;
+}
+.col-14 .person .light{
+    color: rgb(80, 80, 80)
+}
+
+
+
+/* --------------------- content-11 ------------------------- */
+
+
+.col-15{
+    margin: 20px 0;
+    background: #fff;
+}
+.col-16{
+    margin: 50px 0;
+}
+.col-16 .info{
+    margin: 15px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.col-16 div{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    
+}
+.col-16 div .icon{
+    width: 55px;
+    height: 50px;
+    background: #ffc2c6;
+    border-radius: 50%;
+}
+.col-16 div .icon img{
+    width: 60%;
+    margin: auto;
+}
+.col-16 div .detail{
+    flex-flow: column wrap ;
+    flex-basis: 300px;
+    margin:  0 30px;
+}
+.col-16 div .detail .light{
+    padding-top: 10px;
+    color: rgb(80, 80, 80);
+}
+
+/*-------------------------- form  --------------------*/
+
+.col-17{
+    display: flex;
+    flex-wrap: wrap;
+}
+.col-17 .input{
+flex-grow: 1;
+flex-basis: 300px;
+border: 2px solid rgb(80, 80, 80);
+margin: 10px 10px;
+background: transparent;
+}
+.col-17 .input input{
+    padding: 7px;
+    border: none;
+    background: transparent;
+    width: 100%;
+} 
+.col-18{
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: column wrap;
+}
+.col-18 .input{
+    flex-grow: 1;
+    border: 2px solid rgb(80, 80, 80);
+    margin: 10px ;
+}
+.col-18 .input input{
+    width: 100%;
+    flex-basis: 300px;
+    padding: 7px;
+    border: none;
+    background: transparent;
+}
+.col-18 .input .massage{
+    height: 250px;
+}
+.col-19{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+.col-19 button{
+    font-size: 15px;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 45px;
+    background: #f42c38;
+    color: #fff;
+    font-weight: 600;
+}
+
+
+
+
+/*----------------------- footer ------------------*/
+
+
+footer{
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 10px 50px 5px rgba(80, 80, 80, 0.6) ;
+    padding: 10px 0 0 0;
+}
+.col-20{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    text-align: left;
+    padding-bottom: 0;
+}
+.col-21{
+    flex-grow: 1;
+    justify-content: end;
+    flex-basis: 300px;
+    padding-bottom: 25px;
+}
+.services2{
+    position: relative;
+    top: -55px;
+}
+.col-21 .light{
+    color: #888;
+    line-height: 25px;
+}
+.col-21 .big-text{
+    padding-bottom: 15px;
+    font-size: 30px;
+}
+.col-21 .detail{
+    margin: 30px 0;
+
+}
+.col-21 .services{
+    margin: 55px 0 15px 0 ;
+}
+.col-21 .services h4{
+    line-height: 40px;
+}
+.col-21 .services span{
+    color: #f42c38;
+    font-size: 30px;
+    padding-right: 10px;
+
+}
+.col-21 .new{
+    margin: 35px 0;
+}
+.col-21 .new h4{
+    margin: 10px 0 20px 0;
+}
+.col-21 .search{
+    height: 5.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 35wh;
+    overflow: hidden;
+    border-radius: 45px;
+    border: 1px solid #f42c38;
+}
+.col-21 .search .input{
+    flex-grow: 2;
+}
+.col-21 .search .input input{
+    width: 100%;
+    border: none;
+    padding: 5px 15px;
+}
+.col-21 .search .button button{
+    border: 1px solid #f42c38;
+    background: #f42c38;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 45px;
+
+}
+
+.col-30{
+    padding: 0;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+.col-30 .div{
+    flex-grow: 1;
+    flex-basis: 300px;
+}
+.col-32{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.col-32 .icon{
+    width: 45px;    
+    height: 45px;    
+    display: flex;
+    margin: 20px 10px;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+    background: #f42c38;
+    flex-grow: 0;
+}
+.col-32 .icon img{
+
+    width: 24px;
+}

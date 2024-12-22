@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="footerstle.css">
+    
+    <title>Red T-shirt</title>
+    <style>
+
+       
+    </style>
+</head>
+<body>
+
+
+
+
+    <div class="container-image">
+        <div class="big-img">
+            <img id="Img" src="image/product-1.jpg" alt="">
+        </div>
+        <div class="small-img">
+            <div class="img"><img src="image/gallery-4.jpg" onclick="ClickMe(this)"></div>
+            <div class="img"><img src="image/gallery-1.jpg" onclick="ClickMe(this)"></div>
+            <div class="img"><img src="image/gallery-2.jpg" onclick="ClickMe(this)"></div>
+            <div class="img"><img src="image/gallery-3.jpg" onclick="ClickMe(this)"></div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <!--           footer            -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our  App</h3>
+                    <p>Download App for Android and ios mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="image/play-store.png" alt="">
+                        <img src="image/app-store.png" alt="">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="image/logo-white.png" alt="">>
+                    <p>Our Purpose Is To Sustainably Make the 
+                        Pleasure and Benefits of Sports Accessible 
+                        to the Many.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us </h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>YouTube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="coppyright"> Copyright 2022 - Easy Tutorials</p>
+        </div>
+    </div>
+
+<!-- script -->
+<script>
+
+    function ClickMe(smallImg){
+        var fullImage = document.getElementById('Img');
+
+        fullImage.src = smallImg.src
+    }
+
+</script>
+
+
+</body>
+</html>
