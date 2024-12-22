@@ -1,0 +1,230 @@
+/* ------------------------ media 1281px ------------------------- */
+@media only screen and  (max-width:1281px){
+    .content-1 .bigfont {
+        font-size: 7em;
+    }
+    nav .navlist{
+        display: none;
+        top: -450px;
+        left: 0;
+        height: auto;
+        width: 100%;
+    }
+    nav .navlist.show{
+        display: block;
+        position: absolute;
+        top: 75px ;
+        left: 0;
+    }
+    nav .navlist.show ul{
+        position: relative;
+        padding: 25px 15px;
+        /* height: 80vh; */
+        background: #fff;
+        z-index: 10;
+    }
+    nav .navlist.show ul li{
+        display: block;
+        position: relative;
+        line-height: 35px;
+        text-align: center;
+    }
+    .nav .navlist ul li.login {
+        margin: 0 0 0 0 ;
+    }
+    .nav .burger{
+        display: block;
+        transition: 0.5s ease-in-out;
+    }
+    .nav .burger.close .hamburger{
+        transform-origin:center ; 
+        position: absolute;
+    }
+    .nav .burger.close .hamburger1{
+        transform: rotate(45deg);
+        top: 15px;
+    }
+    .nav .burger.close .hamburger2{
+        display: none;
+    }
+    .nav .burger.close .hamburger3{
+        transform: rotate(-45deg);
+        top: 15px;
+    }
+    .content-2 .cards {
+        justify-content: center;
+    }
+    .content-2 .cards .card{
+        margin: 5px 0;
+    }
+    .content-2 .cards .card:nth-child(2){
+        margin: 5px 10px;
+    }
+    .content-3 .row1 .card {
+        margin: 5px 5px;
+    }
+    .content-3 .row2 .cards .card{
+        margin: 5px 0;
+    }
+    .content-3 .row2 .cards .card:nth-child(2){
+        margin: 5px 10px;
+    }
+    .content-3 .row3 .cards {
+        margin: 25px auto;
+        justify-content: center;
+    }
+    .content-3 .row3 .cards .card{
+        margin: 5px 0;
+    }
+    .content-3 .row3 .cards .card:nth-child(2){
+        margin: 5px 10px;
+    }
+    .content-4 .twocards{
+        justify-content: center;
+    }
+    
+    
+}
+
+/* ------------------------ media 910px ------------------------- */
+
+@media only screen and (max-width:911px){
+    .content-1 .bigfont {
+        font-size: 6em;
+        text-align: center;
+    }
+    .content-1 .bigimage .searchinput {
+        width: 45vw;
+    }
+    .content-4 .twocards .card {
+        margin: 5px ;
+    }
+    
+}
+
+/* ------------------------ media 800px ------------------------- */
+
+@media only screen and (max-width:801px){
+    .content-1 .bigfont {
+        font-size: 6em;
+        text-align: center;
+    }
+    .content-1 .bigimage .searchinput {
+        width: 46vw;
+    }
+    .content-2 .cards {
+        justify-content: center;
+    }
+    .content-3 .row3 .cards {
+        justify-content: center;
+    }
+    .content-3 .row2 .cards {
+        flex-direction: column;
+    }
+    .content-3 .row2 .cards .card{
+        width: 350px;
+        flex-grow: 1;
+    }
+    .content-3 .row2 .cards .card:nth-child(2) {
+        margin: 5px 0;
+    }
+    .content-3 .row2 .cards .card .img {
+        width: 15vw;
+        height: 18vh;
+    }
+}
+
+/* ------------------------ media 650px ------------------------- */
+
+@media only screen and (max-width:651px){
+    .content-1 .bigfont {
+        font-size: 4.5em;
+    }
+    .content-1 .bigimage .searchinput {
+        width: 60vw;
+    }
+    .content-3 .row1 .card{
+        max-width: 445px;
+        flex-grow: 1;
+    }
+    .content-3 .row1 .card .img {
+        height: 42vh;
+    }
+    .content-3 .row3 .cards .card:nth-child(2) {
+        margin: 5px 0;
+    }
+    .content-2 .cards .card:nth-child(2) {
+        margin: 5px 0;
+    }
+}
+
+/* ------------------------ media 480px ------------------------- */
+
+@media only screen and (max-width:481px){
+    .content-3 .row2 .cards .card .img {
+        width: 20vw;
+        height: 16vh;
+    }
+    h1{
+        font-size: 25px;
+    }
+    .content-1 .bigfont {
+        font-size: 4em;
+    }
+    .content-3 .row3 .row3head .row{
+        font-size: 12px;
+    }
+    .content-1 .bigimage .searchinput {
+        width: 80vw;
+    }
+    .content-3 .row2 .cards .card {
+        width: 300px;
+        flex-grow: 1;
+    }
+    .content-3 .row2 .cards .card .img {
+        width: 21vw;
+        height: 15vh;
+    }
+}
+
+/* ------------------------ media 320px ------------------------- */
+
+@media only screen and (min-width:319px){
+    .nav .burger {
+        width: 30px;
+    }
+    .nav .burger .hamburger {
+        height: 4px;
+    }
+    .content-1 .bigfont{
+        font-size: 3em;
+        font-weight: 800;
+        line-height: 50px;
+    }
+    .content-1 .bigimage .searchinput {
+        position: absolute;
+        border-radius: unset;
+        top: -15px;
+        max-width: 350px;
+        padding: 0;
+        background: transparent;
+    }
+    .content-1 .bigimage .searchinput input {
+        border-radius: 45px;
+    }
+    .content-1 .bigimage .searchinput .searchbtn {
+        flex-grow: 0;
+        width: 112px;
+        margin: 5px auto 0px auto;
+    }
+    .content-3 .row2 .cards .card .img {
+        width: 28vw;
+    }
+    .content-3 .row4 .textr {
+        justify-content: center;
+        flex-direction: column;
+    }
+    .content-3 .row4 .textr .colortext {
+        margin: 10px auto;
+    }
+}
