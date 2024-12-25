@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Contact Me | Gajendra Luhar | </title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../media.css">
+    <link rel="shortcut icon" href="../img/avatar.png" type="image/x-icon">
+
+</head>
+<body>
+    <video src="../img/background.mp4" autoplay muted loop id="background_video"></video>
+    <img src="../img/contact_background.png" id="background_image">
+    <section class="content row content1">
+        <div class="left_small_side_bar glass row">
+            <img src="../img/top.png" id="top_arrow" class="glass" onclick="showMore()">
+            <p class="top_arrow_text">Read More</p>
+            <div class="pic row">
+                <img src="../img/avatar.png" alt="">
+            </div>
+            <h1>Gajendra Luhar</h1>
+            <p class="padding">Web Developer</p>
+            <span class="line"></span>
+            <div class="small_detail_info row">
+                
+                <div class="row email">
+                    <div class="icon row"><img src="../img/mail.png" alt=""></div>
+                    <div class="detail">
+                        <p>Email</p>
+                        <b class="light">lgajendra862@gmail.com</b>
+                    </div>
+                </div>
+                <div class="row number">
+                    <div class="icon row"><img src="../img/iphone.png" alt=""></div>
+                    <div class="detail">
+                        <p>Number</p>
+                        <b class="light">+91 9106561479</b>
+                    </div>
+                </div>
+                <div class="row birth">
+                    <div class="icon row"><img src="../img/calendar.png" alt=""></div>
+                    <div class="detail">
+                        <p>Date of Birth</p>
+                        <b class="light">2 July, 2003</b>
+                    </div>
+                </div>
+                <div class="row location">
+                    <div class="icon row"><img src="../img/maps-and-flags.png" alt=""></div>
+                    <div class="detail">
+                        <p>Location</p>
+                        <b class="light">Ahmedabad, Gujarat, India</b>
+                    </div>
+                </div>
+            </div>
+
+            <div class="social_media_icon row">
+                <a href="https://www.instagram.com/___gajendra02603/" class="link" target="_blank"><img src="../img/instagram.png" alt=""></a>
+                <a href="https://wa.me/919106561479" class="link" target="_blank"><img src="../img/whatsapp.png" alt=""></a>
+                <a href="https://www.facebook.com/share/15oCG2cRs4/" class="link" target="_blank"><img src="../img/facebook.png" alt="Facebook"></a>
+            </div>
+            
+        </div>
+        <div class="right_big_side-bar row glass" id="right_big_side-bar">
+            <div class="head row">
+                <h1>
+                    Contact 
+                </h1>
+                <ul class="nav row" id="nav">
+                    <li><a href="../index.html" id="nav-link about" class="active" >About</a></li>
+                    <li><a href="resume.html" id="nav-link resume" >Resume</a></li>
+                    <li><a href="portfolio.html" id="nav-link portfolio" ()">Portfolio</a></li>
+                    <!-- <li><a href="portfolio.html" id="nav-link portfolio" >Portfolio</a></li>    another add-->
+                    <li><a href="contact.html" id="nav-link contact">Contact</a></li>
+                </ul>
+                <div id="burger">
+                    <div class="hamburger hamburger1"></div>
+                    <div class="hamburger hamburger2"></div>
+                    <div class="hamburger hamburger3"></div>
+                </div>
+
+            </div>
+            <div class="thic_line"></div>
+            <div class="contact_detail">
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d817.9421661526918!2d72.51300803576913!3d23.00774235292415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e9ad65b659ef5%3A0x1dc92d91345b98d1!2sBlock-8%2C%20Shivam%20Apartment%202%2C%20Prahlad%20Nagar%2C%20Ahmedabad%2C%20Gujarat%20380015!5e0!3m2!1sen!2sin!4v1725172788852!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                <form action="https://api.web3forms.com/submit" method="POST" class="row form" data-aos="fade-right" novalidate2>
+
+                    <input type="hidden" name="access_key" value="9479fd80-4926-4a42-a340-a5a9e71d44b4">
+                    <input type="hidden" name="subject" value="New Message From Your Portfolio website">
+                    <input type="hidden" name="from_name" value="My Portfolio">
+                    
+                        <Legend>Contact Us</Legend>
+                        <div class="row fullname">
+                            <div class="input_group">
+                                <label class="placeholder" for="FirstName">First Name :</label>
+                                <input type="text" class="input" id="fname" name="firtsname" placeholder="Enter here.." required>
+                            </div>
+                            <div class="input_group">
+                                <label class="placeholder" for="LastName">Last Name :</label>
+                                <input type="text" class="input" id="lname" name="lastname" placeholder="Enter here.." required >
+                            </div>
+                        </div>
+                    
+                        <div class="email_number row">
+                            <div class="input_group">
+                                <label class="placeholder" for="Email">Email :</label>
+                                <input type="email" class="input" id="email" name="email" placeholder="Your email" required >
+                            </div>
+                            <div class="input_group">
+                                <label class="placeholder" for="Number">Number :</label>
+                                <input type="text" class="input" id="number" name="Number" placeholder="+91 (234) 56789" required >
+                            </div>
+                        </div>
+    
+                
+                        <div class="message_group">
+                            <label class="placeholder" for="Message">Message :</label>
+                            <textarea name="Message" class="row" id="Message" placeholder="Your message"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="row send glass"> <img src="../img/send.png">Submit</button>
+                        
+                </form>   
+            </div>
+            <div class="copyright glass" >
+                <div class="scrolling-text-inner" style="--marquee-speed: 20s; --direction:scroll-left" role="marquee">
+                    <div class="scrolling-text">
+                        <div class="scrolling-text-item">&copy; copyright 2024, made by Gajendra Luhar</div>
+                        <div class="scrolling-text-item link"><a href="contact.html">8/501 shivam Appartment, B/H. Sarnam-12. Vejalpur, Ahmedabad</a></div>
+                        <div class="scrolling-text-item">&copy; copyright 2024, made by Gajendra Luhar</div>
+                        <div class="scrolling-text-item link"><a href="https://www.instagram.com/___gajendra02603/">___gajendra02603</a></div>
+                        <div class="scrolling-text-item">&copy; copyright 2024, made by Gajendra Luhar</div>
+                        <div class="scrolling-text-item link"><a href="https://wa.me/919106561479">+91 9106561479</a></div>
+                    </div>
+                    <div class="scrolling-text">
+                        <div class="scrolling-text-item">&copy; copyright 2024, made by Gajendra Luhar</div>
+                        <div class="scrolling-text-item link"><a href="contact.html">8/501 shivam Appartment, B/H. Sarnam-12. Vejalpur, Ahmedabad</a></div>
+                        <div class="scrolling-text-item">&copy; copyright 2024, made by Gajendra Luhar</div>
+                        <div class="scrolling-text-item link"><a href="https://www.instagram.com/___gajendra02603/">___gajendra02603</a></div>
+                        <div class="scrolling-text-item">&copy; copyright 2024, made by Gajendra Luhar</div>
+                        <div class="scrolling-text-item link"><a href="https://wa.me/919106561479">+91 9106561479</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script text="JavaScript" src="../navbtn.js"></script>
+    <script src="../scrollup.js"></script>
+    <script>
+        window.addEventListener('scroll', function() {
+        const scrollElement = document.querySelector('#right_big_side-bar');
+        const scrollPosition = window.scrollY;
+            if (scrollPosition > 35) {
+                scrollElement.style.top = '35px';
+            } else {
+                scrollElement.style.top = '0';
+            }
+        });
+    </script>
+    <!-- <script>
+        window.onload = function() {
+            // Reset the form fields when the page loads
+            document.getElementById("form").reset();
+        };
+    </script> -->
+    <script src="../whatsapp.js"></script>
+</body>
+</html>
