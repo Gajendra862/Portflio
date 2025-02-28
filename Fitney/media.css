@@ -110,6 +110,7 @@
         position: absolute;
         top: 80px;
         right: -500px;
+        z-index: 5;
     }
     .nav ul.show {
         display: block;
