@@ -110,7 +110,6 @@
         position: absolute;
         top: 80px;
         right: -500px;
-        z-index: 6;
     }
     .nav ul.show {
         display: block;
@@ -121,6 +120,7 @@
         height: 90vh;
         background: #00386c;
         transition: right 1s ease-in-out;
+        z-index: 6;
     }
     .nav ul li a{
         text-align:center;
